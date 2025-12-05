@@ -52,7 +52,7 @@ def main(): #the main fuction
 		commands=input("")
 		if commands.split()[0] == "add":
 			try:
-				add(commands.split()[1])
+				add(commands[4:])
 			except IndexError:
 				pass
 	else: #if tasks do exist
@@ -97,4 +97,4 @@ def main(): #the main fuction
 					sys.exit()
 
 while True:
-	main() 
+	main()
